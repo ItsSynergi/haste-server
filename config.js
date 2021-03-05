@@ -3,7 +3,7 @@
   "host": "0.0.0.0",
   "port": 7777,
 
-  "keyLength": 10,
+  "keyLength": 7,
 
   "maxLength": 400000,
 
@@ -20,20 +20,21 @@
   ],
 
   "keyGenerator": {
-    "type": "phonetic"
+    "type": "random"
   },
 
   "rateLimits": {
     "categories": {
       "normal": {
         "totalRequests": 500,
-        "every": 60000
+        "every": 3600000
       }
     }
   },
 
   "storage": {
-    "type": "file"
+    "type": "file",
+    "path": "./data"
   },
 
   "documents": {
